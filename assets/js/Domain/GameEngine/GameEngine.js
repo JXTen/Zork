@@ -317,6 +317,12 @@ GameEngine = {
         }
 
     },
+	
+    eatLeaflet: () => {
+	
+	if (!GameEngine.player.getPlayerInventory().includes("leaflet")) {
+		GameEngine.cli.output("I don't think the leaflet would appreciate that!");
+    },
 
     outputList: {
         saveLoaded: "<strong>Game loaded from a previous save.</strong>",
